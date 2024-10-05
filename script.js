@@ -25,4 +25,4 @@ function showLoading() {
 
 function hideLoading() {
     document.getElementById('loading').classList.remove('hidden');
-};
+};  
