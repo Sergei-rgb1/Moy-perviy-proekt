@@ -14,6 +14,11 @@ body {
 
 }
 
+#Video {
+    background-color: orange;
+    font-size: 50px;
+    float: right;
+}
 
 #Video, #Foto {
     background-color: orange;
@@ -62,4 +67,4 @@ body {
     font-size: 50px;
     text-align: center;
   
-} */
+} */    
