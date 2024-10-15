@@ -1,8 +1,10 @@
 body {
-    
+    font-family: Arial, sans-serif;
+    margin: 0; 
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
+    overflow: hidden;
 }
 
 #Kostum {
@@ -20,8 +22,8 @@ header {
     text-align: center;
     justify-items: flex-start;
     align-items: flex-start;
-  }
-
+    
+}
 nav ul {
     list-style: none;
     padding: 0;
@@ -30,31 +32,40 @@ nav ul {
   nav ul li {
     display: inline;
     margin: 0 15px;
+    
   }
   
   nav ul li a {
     color: red;
     text-decoration: none;
+    /* margin-left: auto;
+    margin-right: auto; */
   }
+  
+  nav ul li a:hover {
+    color: white;
+  }
+  
 
   h1, h2 {
     margin: 20px 0;
   }
   
-  main {
-    padding: 20px;
+  #main:hover {
+    /* padding: 20px; */
+    /* transform: scale(1.2); */
   }
 
   .KartinkaTN {
     display: block;
     object-fit: cover;
     object-position: 50% 50%;
-    width: 50px;
+    width: 10px;
     height: auto;
     max-width: 500px;
     position: absolute;
-    right: 20px;
-    top: 200px;
+    left: 420px;
+    top: 131px;
     margin-right: 20px;
     animation: slideIn 2s forwards;
   }
@@ -111,3 +122,5 @@ nav ul {
     text-align: center;
   
 } */        
+
+
