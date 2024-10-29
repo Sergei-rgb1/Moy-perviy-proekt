@@ -20,7 +20,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Контакты</a></li>
               <li class="nav-item">
-                <a class="nav-link active" href="./photo.html">Фото танцев</a></li>
+                <a class="nav-link active" href="./photo.html" id="main">Фото танцев</a></li>
               <li class="nav-item">
                 <a class="nav-link" href="Video">Видео танцев</a></li>
               <li class="nav-item">
@@ -29,65 +29,233 @@
         </nav>
     </header>
 
-   
-
-<div class="main-photo" data-bs-toggle="modal" data-bs-target="#galleryModal">
+   <!-- Основное изображение с подписью для октября -->
+<div class="photo-oktyabr" data-bs-toggle="modal" data-bs-target="#galleryModalOctober">
   <img src="./19 октября 2024 года фестиваль моды/Zncx4PqaSOU.jpg" alt="Основное изображение" class="img-thumbnail">
   <div class="caption">
       <p>«Модная матрешка - 2024» 19 Октября</p>
   </div>
 </div>
 
-<div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalLabel" aria-hidden="true">
-<div class="modal-dialog modal-lg">
-  <div class="modal-content">
-    <div class="modal-header">
-      <h5 class="modal-title" id="galleryModalLabel">Галерея фотографий</h5>
-      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-    </div>
-    <div class="modal-body">
-      <div class="gallery">
+<!-- /* Модальное окно с галереей для октября -->
+<div class="modal fade" id="galleryModalOctober" tabindex="-1" aria-labelledby="galleryModalLabelOctober" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="galleryModalLabelOctober">Галерея фотографий (Октябрь)</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="gallery-oktyabr">
           <div class="photo-item">
-              <img src="./19 октября 2024 года фестиваль моды/Zncx4PqaSOU.jpg" alt="Фото 1" class="img-thumbnail">
+            <img src="./19 октября 2024 года фестиваль моды/Zncx4PqaSOU.jpg" alt="Фото 1" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
           </div>
           <div class="photo-item">
-              <img src="./19 октября 2024 года фестиваль моды/NCkYgKAE1-k.jpg" alt="Фото 2" class="img-thumbnail">
+            <img src="./19 октября 2024 года фестиваль моды/NCkYgKAE1-k.jpg" alt="Фото 2" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
           </div>
           <div class="photo-item">
-              <img src="./19 октября 2024 года фестиваль моды/FsEK3aYrlcA.jpg" alt="Фото 3" class="img-thumbnail">
+            <img src="./19 октября 2024 года фестиваль моды/FsEK3aYrlcA.jpg" alt="Фото 3" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
           </div>
           <div class="photo-item">
-            <img src="./19 октября 2024 года фестиваль моды/bHvz5JNvM0U.jpg" alt="Фото 4" class="img-thumbnail">
+            <img src="./19 октября 2024 года фестиваль моды/bHvz5JNvM0U.jpg" alt="Фото 4" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
           </div>
-            <div class="photo-item">
-              <img src="./19 октября 2024 года фестиваль моды/4oNlf56dj80.jpg" alt="Фото 5" class="img-thumbnail">
-            </div>
-              <div class="photo-item">
-                <img src="./19 октября 2024 года фестиваль моды/eibKLkQITfk.jpg" alt="Фото 6" class="img-thumbnail">
-              </div>
-              <div class="photo-item">
-                <img src="./19 октября 2024 года фестиваль моды/F9PsiLeTnDo.jpg" alt="Фото 7" class="img-thumbnail">
-              </div>
-              <div class="photo-item">
-                <img src="./19 октября 2024 года фестиваль моды/nMV04Gu0ziY.jpg" alt="Фото 7" class="img-thumbnail">
-              </div>
-              <div class="photo-item">
-                <img src="./19 октября 2024 года фестиваль моды/nMV04Gu0ziY.jpg" alt="Фото 8" class="img-thumbnail">
-              </div>
-              <div class="photo-item">
-                <img src="./19 октября 2024 года фестиваль моды/xWTCcId_6uk.jpg" alt="Фото 8" class="img-thumbnail">
-              </div>
-              <div class="photo-item">
-                <img src="./19 октября 2024 года фестиваль моды/dDYc2CtkmLM.jpg" alt="Фото 8" class="img-thumbnail">
-              </div>
-            </div>
+          <div class="photo-item">
+            <img src="./19 октября 2024 года фестиваль моды/4oNlf56dj80.jpg" alt="Фото 5" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
+          </div>
+          <div class="photo-item">
+            <img src="./19 октября 2024 года фестиваль моды/eibKLkQITfk.jpg" alt="Фото 6" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
+          </div>
+          <div class="photo-item">
+            <img src="./19 октября 2024 года фестиваль моды/F9PsiLeTnDo.jpg" alt="Фото 7" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
+          </div>
+          <div class="photo-item">
+            <img src="./19 октября 2024 года фестиваль моды/nMV04Gu0ziY.jpg" alt="Фото 8" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
+          </div>
+          <div class="photo-item">
+            <img src="./19 октября 2024 года фестиваль моды/xWTCcId_6uk.jpg" alt="Фото 9" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
+          </div>
+          <div class="photo-item">
+            <img src="./19 октября 2024 года фестиваль моды/dDYc2CtkmLM.jpg" alt="Фото 10" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+
+
+
+<!-- Основное изображение с подписью для апреля -->
+<div class="photo-apryel" data-bs-toggle="modal" data-bs-target="#galleryModalApril">
+  <img src="./Апрель-2024 1-5/1.jpg" alt="Основное изображение" class="img-thumbnail main-thumbnail">
+  <div class="caption-apryel">
+      <p>«Спартакиада - 2024» Апрель 1-5</p>
+  </div>
 </div>
+
+<!-- Модальное окно с галереей для апреля -->
+<div class="modal fade" id="galleryModalApril" tabindex="0" aria-labelledby="galleryModalLabelApril" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="galleryModalLabelApril">Галерея фотографий (Апрель)</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="gallery-apryel">
+          <div class="row">
+              <div class="col-4">
+                  <img src="./Апрель-2024 1-5/2.jpg" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
+              </div>
+              <div class="col-4">
+                  <img src="./Апрель-2024 1-5/3.jpg" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
+              </div>
+              <div class="col-4">
+                  <img src="./Апрель-2024 1-5/4.jpg" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
+              </div>
+              <div class="col-4">
+                <img src="./Апрель-2024 1-5/5.jpg" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
+            </div>
+            <div class="col-4">
+              <img src="./Апрель-2024 1-5/6.jpg" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
+          </div>
+          <div class="col-4">
+            <img src="./Апрель-2024 1-5/7.jpg" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
+        </div>
+        <div class="col-4">
+          <img src="./Апрель-2024 1-5/8.jpg" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
+      </div>
+      <div class="col-4">
+        <img src="./Апрель-2024 1-5/9.jpg" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
+    </div>
+    <div class="col-4">
+      <img src="./Апрель-2024 1-5/10.jpg" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
+  </div>
+  <div class="col-4">
+    <img src="./Апрель-2024 1-5/11.jpg" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
+</div>
+<div class="col-4">
+  <img src="./Апрель-2024 1-5/12.jpg" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
+</div>
+<div class="col-4">
+  <img src="./Апрель-2024 1-5/13.jpg" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
+</div>
+<div class="col-4">
+  <img src="./Апрель-2024 1-5/14.jpg" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
+</div>
+<div class="col-4">
+  <img src="./Апрель-2024 1-5/14.jpg" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
+</div>
+<div class="col-4">
+  <img src="./Апрель-2024 1-5/15.jpg" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
+</div>
+<div class="col-4">
+  <img src="./Апрель-2024 1-5/16.jpg" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
+</div>
+<div class="col-4">
+  <img src="./Апрель-2024 1-5/17.jpg" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
+</div>
+<div class="col-4">
+  <img src="./Апрель-2024 1-5/18.jpg" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
+</div>
+<div class="col-4">
+  <img src="./Апрель-2024 1-5/19.jpg" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
+</div>
+<div class="col-4">
+  <img src="./Апрель-2024 1-5/20.jpg" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
+</div>
+<div class="col-4">
+  <img src="./Апрель-2024 1-5/21.jpg" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
+</div>
+<div class="col-4">
+  <img src="./Апрель-2024 1-5/22.jpg" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
+</div>
+<div class="col-4">
+  <img src="./Апрель-2024 1-5/23.jpg" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
+</div>
+<div class="col-4">
+  <img src="./Апрель-2024 1-5/24.jpg" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
+</div>
+<div class="col-4">
+  <img src="./Апрель-2024 1-5/25.jpg" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
+</div>
+<div class="col-4">
+  <img src="./Апрель-2024 1-5/26.jpg" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
+</div>
+<div class="col-4">
+  <img src="./Апрель-2024 1-5/27.jpg" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
+</div>
+<div class="col-4">
+  <img src="./Апрель-2024 1-5/28.jpg" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
+</div>
+<div class="col-4">
+  <img src="./Апрель-2024 1-5/29.jpg" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
+</div>
+<div class="col-4">
+  <img src="./Апрель-2024 1-5/30.jpg" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
+</div>
+<div class="col-4">
+  <img src="./Апрель-2024 1-5/31.jpg" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
+</div>
+<div class="col-4">
+  <img src="./Апрель-2024 1-5/32.jpg" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
+</div>
+<div class="col-4">
+  <img src="./Апрель-2024 1-5/33.jpg" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
+</div>
+<div class="col-4">
+  <img src="./Апрель-2024 1-5/34.jpg" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
+</div>
+<div class="col-4">
+  <img src="./Апрель-2024 1-5/36.jpg" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
+</div>
+<div class="col-4">
+  <img src="./Апрель-2024 1-5/37.jpg" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
+</div>
+<div class="col-4">
+  <img src="./Апрель-2024 1-5/38.jpg" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
+</div>
+<div class="col-4">
+  <img src="./Апрель-2024 1-5/39.jpg" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
+</div>
+<div class="col-4">
+  <img src="./Апрель-2024 1-5/40.jpg" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
+</div>
+<div class="col-4">
+  <img src="./Апрель-2024 1-5/41.jpg" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
+</div>
+<div class="col-4">
+  <img src="./Апрель-2024 1-5/42.jpg" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
+</div>
+<div class="col-4">
+  <img src="./Апрель-2024 1-5/43.jpg" class="img-thumbnail gallery-thumbnail" data-bs-toggle="modal" data-bs-target="#fullscreenModal" onclick="showFullscreen(this.src)">
+</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Модальное окно для полноэкранного изображения -->
+<div class="modal fade" id="fullscreenModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+              <img id="fullscreenImage" src="" alt="Полноэкранное изображение" class="img-fluid">
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>

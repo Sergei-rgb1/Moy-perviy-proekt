@@ -15,3 +15,6 @@
 //     document.getElementById('loading').classList.remove('hidden');
 // };  
 
+function showFullscreen(src) {
+    document.getElementById("fullscreenImage").src = src;
+}
