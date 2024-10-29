@@ -194,6 +194,12 @@ nav ul {
   border-radius: 10px;
 }
 
+.photo-item img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+
 .photo-item p {
   margin-top: 8px;
   font-size: 0.8rem;
@@ -244,6 +250,10 @@ nav ul {
   border-radius: 10px;
 }
 
+.col-4 img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
 .col-4 p {
   margin-top: 8px;
   font-size: 0.8rem;
@@ -251,12 +261,12 @@ nav ul {
 }
 
 
+
+
 /* фото февраль */
 
 
-
-
-.gallery-fevral {
+.photo-fevral {
   display: inline-block;
   width: 300px;
   text-align: center;
@@ -277,7 +287,12 @@ nav ul {
 }
 
 
-
+.gallery-fevral {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
 
 .fev-4 {
   width: 150px;
@@ -286,9 +301,14 @@ nav ul {
 
 .fev-4 img {
   width: 100%;
-  height: 150px;
+  height: 500px;
   object-fit: cover;
   border-radius: 10px;
+}
+
+.fev-4 img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
 }
 
 .fev-4 p {
@@ -296,7 +316,6 @@ nav ul {
   font-size: 0.8rem;
   color: #555;
 }
-
 
 
 
